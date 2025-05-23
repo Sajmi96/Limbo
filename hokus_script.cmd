@@ -1,5 +1,5 @@
 @echo off
 
-echo Ahoj %username%
+echo Ahoj %username% na pocitaci %computername%
 
 pause
