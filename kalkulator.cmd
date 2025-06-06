@@ -10,8 +10,19 @@ if %typ%=nasobeni goto nasobeni
 if %typ%=deleni goto deleni
 
 :scitani
+set vysledek=%prvni_p%+%druha_p%
+echo vysledek souctu cisla %prvni_p% a %druha_p% se rovna %vysledek%
+
 :nasobeni
+set vysledek=%prvni_p%*%druha_p%
+echo vysledek soucinu cisla %prvni_p% a %druha_p% se rovna %vysledek%
+
+
 :deleni
+set vysledek=%prvni_p%/%druha_p%
+echo vysledek vydeleni cisla %prvni_p% a %druha_p% se rovna %vysledek%
+
+
 
 
 
