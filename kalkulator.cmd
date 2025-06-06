@@ -12,22 +12,18 @@ if %typ%==nasobeni goto nasobeni
 if %typ%==deleni goto deleni
 
 :scitani
-set vysledek=%prvni_p%+%druha_p%
+set /a vysledek=%prvni_p%+%druha_p%
 echo vysledek souctu cisla %prvni_p% a %druha_p% se rovna %vysledek%
+goto start
 
 :nasobeni
-set vysledek=%prvni_p%*%druha_p%
+set /a vysledek=%prvni_p%*%druha_p%
 echo vysledek soucinu cisla %prvni_p% a %druha_p% se rovna %vysledek%
-
+goto start
 
 :deleni
-set vysledek=%prvni_p%/%druha_p%
-echo vysledek vydeleni cisla %prvni_p% a %druha_p% se rovna %vysledek%
-
-
-
-
-
-
+set /a vysledek=%prvni_p%/%druha_p%
+echo Vysledek vydeleni cisla %prvni_p% a %druha_p% se rovna %vysledek%
 goto start
+
 pause
